@@ -1,4 +1,5 @@
 /* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+/* https://media.giphy.com/media/3oD3YC5okylCndTsT6/giphy.gif */
 
 html {
   box-sizing: border-box;
@@ -6,7 +7,7 @@ html {
 
 body {
   margin: 0;
-  background: #45badd;
+  background: #ff6363;
 }
 
 .container {
@@ -17,21 +18,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('./robot.gif');
-  background-size: contain;
-  background-position: left center;
+  background: url('https://media.giphy.com/media/3oD3YC5okylCndTsT6/giphy.gif');
+  background-position: 750px;
   background-repeat: no-repeat;
 }
 
 button {
+  position: absolute;
   cursor: pointer;
   outline: none;
   width: 200px;
   height: 50px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
-  color: white;
-  background: #ff3482;
+  color: #ff6363;
+  background: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 5px;
   /* horizontal offset, vertical offset, blur, spread, color */
@@ -50,6 +51,41 @@ button:active {
 button:disabled {
   cursor: default;
   filter: brightness(30%);
+}
+
+.dialouge-box {
+  position: relative;
+  bottom: 150px;
+}
+
+.dialouge {
+  color: #fff;
+  width: 50%;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 15px;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: break-spaces;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+}
+
+/* footer */
+
+footer,
+.push {
+  text-align: center;
+  height: 50px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Media Query: Tablet or Smaller */
